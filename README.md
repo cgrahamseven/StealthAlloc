@@ -12,6 +12,9 @@ Until the day that Microsoft allows all security solutions to receive notificati
 # Use
 Two library files are provided for both 32-bit and 64-bit applications to link in. There are no imports required by the routine. As such it should be able to be safely used in Reflective Dlls, etc. Simply include the provided header file in your project in Visual Studio and call StealthAlloc as needed. See the provided header file for details on required function parameters.
 
+# Windows Versions
+Tested and working on Windows 7 through Windows 10 (Creators Update)
+
 # File Hashes (SHA256)
 
 d6fa01430fa137ccabdabe88cc2049cb87ab54e33d64fe5dc820adabfdecfbd2  StealthAlloc32.lib
