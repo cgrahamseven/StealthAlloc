@@ -7,8 +7,6 @@ One of the most critical steps in executing code within the current process or i
 
 This routine takes advantage of the fact that a user mode process does not at all have to call into one of these hooked APIs. Instead, it will dynamically set up a call to NtAllocateVirtualMemory, but avoid the normal code path to this function. 
 
-Until the day that Microsoft allows all security solutions to receive notifications from the kernel of memory allocations where the EXECUTE flag is set, there is no way to avoid having a user evade your hooks in this manner. 
-
 # Use
 Two library files are provided for both 32-bit and 64-bit applications to link in. There are no imports required by the routine. As such it should be able to be safely used in Reflective Dlls, etc. Simply include the provided header file in your project in Visual Studio and call StealthAlloc as needed. See the provided header file for details on required function parameters.
 
